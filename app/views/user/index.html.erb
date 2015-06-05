@@ -6,6 +6,8 @@
 <body>
 <div><h3>HELLO FRIEND</h3></div>
 <%= yield %>
-
+ <p>List: <%= @users.each do |u| %></p>
+    <%= u.email %>
+  <% end %>
 </body>
 </html>

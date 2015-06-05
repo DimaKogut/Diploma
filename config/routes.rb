@@ -1,6 +1,6 @@
 StudentTesting::Application.routes.draw do
   devise_for :users
-
+  root :to => 'user#list'
   get 'sign_in' =>  'user#index'
   get 'users' => 'user#list'
   # The priority is based upon order of creation:
