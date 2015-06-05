@@ -4,6 +4,6 @@ class UserController < ApplicationController
   end
 
   def list
-    @users = controller_name.classify.constantize.find(:all)
+    @users = User.all
   end
 end
