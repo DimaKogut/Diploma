@@ -8,7 +8,9 @@
 <p></p>
 
 
-  <p>List: <%= @users %></p>
+    <p>List: <%= @users.each do |u| %></p>
+    <%= u.email %>
+  <% end %>
 
 
 <%= yield %>
